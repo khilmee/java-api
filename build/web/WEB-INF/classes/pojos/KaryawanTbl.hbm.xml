@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Jan 27, 2020 4:24:07 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.KaryawanTbl" table="karyawan_tbl" catalog="karyawan_db" optimistic-lock="version">
+        <id name="idKaryawan" type="java.lang.Integer">
+            <column name="id_karyawan" />
+            <generator class="identity" />
+        </id>
+        <property name="nama" type="string">
+            <column name="nama" length="45" not-null="true" />
+        </property>
+        <property name="gender" type="string">
+            <column name="gender" length="1" not-null="true" />
+        </property>
+        <property name="alamat" type="string">
+            <column name="alamat" length="65535" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>
